@@ -1,0 +1,125 @@
+body{
+    font-family: sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+img{
+    width: 100%;
+    transition: transform .3s;
+}
+.image{
+    overflow: hidden;
+}
+img:hover{
+ transform: scale(1.06)
+}
+.img, .ni-img{
+    padding: 10px;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid rgb(0, 121, 168);
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.outline{
+    color: rgb(0, 121, 168);
+}
+.outline:hover{
+    color: white;
+    background-color: rgb(0, 121, 168);
+}
+.solid{
+    margin-right: 5px;
+    color: white;
+    background-color: rgb(0, 121, 168);
+}
+a{
+margin-top: 20px;   
+}
+
+.text{
+    border: 1.5px solid rgba(100, 100, 100, 0.5);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin-top: -7px;
+    padding: 17px;
+    max-height: 150px;
+}
+
+p{
+
+    text-align: start;
+    font-size: 14px;
+    color: rgb(40, 40, 40);
+    padding-bottom: 15px;
+    
+}
+.third > div, .forth > div{
+    border-radius: 7px;
+    }
+h2{
+    margin: 0;
+    opacity: 0.9;
+}
+@media screen and (max-width: 870px) {
+    .text{
+        min-height: 150px;
+        
+    }
+    .ni-img > .text {
+        padding-bottom: 80px;
+        
+    }
+    .container{
+        gap: 5px;
+    }
+}
+@media (max-width: 600px){
+    p{
+        font-size: 12px;
+        font-weight: 100;
+        opacity: 0.95;
+    }
+}
+@media (max-width: 540px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    p{
+        font-size: 12px;
+        opacity: 1;
+    }
+    .text{
+        min-height: 120px;
+        
+    }
+    
+    .ni-img > .text {
+        padding-bottom: 18px;
+        
+    }
+    .third > .text {
+        padding-bottom: 33px;
+        
+    }
+    a{
+        font-size: 11px;
+    }
+}
+@media (max-width: 308px){
+    h2{
+        font-size: 18px;
+    }
+    p{
+font-size: 10px;
+    }
+    a{
+        font-size:8px;
+    }
+}
